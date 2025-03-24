@@ -1,0 +1,109 @@
+/* General Container */
+.dashboard-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Refresh Button */
+.refresh-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.refresh-btn:hover {
+    background: #0056b3;
+}
+
+/* Table Styling */
+.document-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Headers */
+.document-table th {
+    background: #343a40;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Table Rows */
+.document-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate Row Background */
+.document-table tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Hover Effect */
+.document-table tbody tr:hover {
+    background: #e9ecef;
+    transition: background 0.3s ease;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Urgency Bar (Bootstrap-like Styling) */
+.urgency-bar {
+    display: flex;
+    height: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 120px;
+    border: 1px solid #ddd;
+}
+
+/* Urgency Levels */
+.urgency-bar .high {
+    background: red;
+}
+
+.urgency-bar .medium {
+    background: orange;
+}
+
+.urgency-bar .low {
+    background: green;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .document-table {
+        font-size: 14px;
+    }
+    .document-table th, .document-table td {
+        padding: 8px;
+    }
+}

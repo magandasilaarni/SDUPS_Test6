@@ -1,0 +1,24 @@
+<!-- Chief Dashboard Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chief Dashboard</title>
+    <script src="{{ url_for('static', filename='js/review.js') }}"></script> <!-- Link JS File -->
+</head>
+<body>
+
+    <!-- Your dashboard content here -->
+
+    <!-- PDF Preview Modal -->
+    <div id="pdfModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('pdfModal').style.display='none'">&times;</span>
+            <iframe id="pdfViewer" width="100%" height="500px"></iframe>
+        </div>
+    </div>
+
+    <!-- Example Button for File Review -->
+    <button onclick="reviewDocument(1)">Review File</button>
+
+</body>
+</html>
