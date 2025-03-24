@@ -1,0 +1,10 @@
+Flask
+pytesseract
+pdf2image
+python-dateutil
+Flask
+Flask-Cors
+Flask-SQLAlchemy
+pdfplumber
+transformers
+werkzeug
