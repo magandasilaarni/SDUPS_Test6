@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uploaded PDFs</title>
+</head>
+<body>
+    <h2>Uploaded PDF Files</h2>
+    <ul>
+        {% for file in files %}
+            <li>
+                <a href="{{ url_for('uploaded_file', filename=file.filename) }}">{{ file.filename }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Upload Another File</a>
+</body>
+</html>
